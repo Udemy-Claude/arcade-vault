@@ -1,4 +1,4 @@
-# CLAUDE.md
+  # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -20,6 +20,9 @@ npm run lint   # ESLint (config plana en eslint.config.mjs)
 ```
 
 No hay framework de tests configurado.
+
+##  Skills
+usa el /frontend-design para diseñar la interfaz de usuario.
 
 ## Stack y notas clave
 
