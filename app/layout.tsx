@@ -4,6 +4,9 @@ import {
   JetBrains_Mono,
   Press_Start_2P,
 } from "next/font/google";
+import { AppProvider } from "@/components/app-provider";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteNav } from "@/components/site-nav";
 import "./globals.css";
 
 const pixel = Press_Start_2P({
@@ -38,7 +41,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <div className="av-bg" aria-hidden="true" />
         <div className="av-noise" aria-hidden="true" />
         <div id="root">
-          <main className="av-main">{children}</main>
+          <AppProvider>
+            <SiteNav />
+            <main className="av-main">{children}</main>
+            <SiteFooter />
+          </AppProvider>
         </div>
       </body>
     </html>
